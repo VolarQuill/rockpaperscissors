@@ -14,5 +14,15 @@ int main() {
     cin >> player;
     } while(player!='r' && player!='p' && player!='s');
 
+    if(player == 'r'){
+        cout << "PAPER! YOU LOSE!!!!" << endl;
+    }
+    if(player == 'p'){
+        cout << "SCISSORS!!!! YOU WILL NEVER WIN MWAHHAHAH!!!!!!!!!!!" << endl;
+    }
+    if(player == 's'){
+        cout << "ROCK. YES ROCK. YOU LOSEEEEE!!!!" << endl;
+    }
+
     return 0;
 };
