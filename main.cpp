@@ -6,11 +6,11 @@ using namespace std;
 
 
 int main() { 
-    int count = 0;
+    int count = 1;
 
     cout << "Welcome to Rock Paper Scissors! Good Luck Winning!" << endl;
     cout << "======================================================" << endl;
-    
+
     do{
     std::string r = "Rock";
     std::string p = "Paper";
@@ -20,6 +20,7 @@ int main() {
     do{
     cout << "Please choose your weaapon." << endl;
     cout << "'r' for rock, 'p' for paper, 's' for scissors" << endl;
+     cout << "Round - " << count << endl;
     cin >> player;
     } while(player!='r' && player!='p' && player!='s');
 
@@ -29,11 +30,13 @@ int main() {
         cout << "I CHOOSE PAPER! YOU LOSE!!!!" << endl;
     };
     if(player == 'p'){
+        cout << "Round - " << count << endl;
         cout << "*************************************" << endl;
         cout << "Your choice is " << p << endl;
         cout << "I CHOOSE SCISSORS!!!! YOU WILL NEVER WIN MWAHHAHAH!!!!!!!!!!!" << endl;
     };
     if(player == 's'){
+        cout << "Round - " << count << endl;
         cout << "*************************************" << endl;
         cout << "Your choice is " << s << endl;
         cout << "I CHOOSE ROCK. YES ROCK. YOU LOSEEEEE!!!!" << endl;
@@ -41,7 +44,7 @@ int main() {
 
     cout << "========================================================" << endl;
         count+=1;
-    }   while(count < 3);
+    }   while(count < 4);
    
     cout << "You lost 0-3. Better luck next time." << endl;
 
